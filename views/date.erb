@@ -1,4 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <p>The date is <%=Date.today)%></p>
+    <%=time = Time.new%>
+    <%=day_of_week=time.wday%>
+    <%=day_number = time.day%>
+    <%=month = time.month%>
+    <%=year = time.year%>
+    <p>The date is <%="#{day_of_week}, #{month} #{day_number}, #{year}"%></p>
 </html>
