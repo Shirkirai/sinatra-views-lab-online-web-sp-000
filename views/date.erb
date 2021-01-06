@@ -5,5 +5,5 @@
     <%=day_number = time.day%>
     <%=month = time.month%>
     <%=year = time.year%>
-    <p>The date is <%="#{day_of_week}.to_s, #{month} #{day_number}, #{year}"%></p>
+    <p>The date is <%=time.strftime(%A, %B %d, %Y)%></p>
 </html>
